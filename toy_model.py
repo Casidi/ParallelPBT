@@ -5,7 +5,7 @@ import csv
 from model_base import ModelBase
 
 def main(hp, model_id, save_base_dir, data_dir, train_epochs):
-    save_dir = os.path.join(save_base_dir, str(model_id))
+    save_dir = save_base_dir + str(model_id)
 
     tf.reset_default_graph()
     theta_0 = tf.Variable(0.9)
